@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="add_word">Добавить слово</string>
+    <string name="hint_word">Слово...</string>
+    <string name="button_save">Сохранить</string>
+    <string name="empty_not_saved">Слово не было сохранено, т.к. оно пустое</string>
 </resources>

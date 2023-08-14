@@ -6,6 +6,6 @@ import com.example.roomwordsample.Utils.Utils.wordTableKey
 
 @Entity(tableName = wordTableKey)
 data class Word(
-    @PrimaryKey(autoGenerate = true) val id: Int,
+    @PrimaryKey
     @ColumnInfo(name = wordKey) val word: String
 )
