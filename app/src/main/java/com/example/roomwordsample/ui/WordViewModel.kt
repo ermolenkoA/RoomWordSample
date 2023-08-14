@@ -1,4 +1,4 @@
-package com.example.roomwordsample
+package com.example.roomwordsample.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
