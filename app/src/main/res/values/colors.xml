@@ -2,8 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimary">#FF00FF00</color>
-    <color name="colorPrimaryDark">#FF00FF00</color>
-    <color name="colorAccent">#FF00FF00</color>
-    <color name="buttonLabel">#FFFFFF</color>
+    <color name="colorPrimary">#0040FF</color>
+    <color name="colorPrimaryDark">#091980</color>
+    <color name="colorPrimaryLight">#1F38D5</color>
+    <color name="colorCardLight">#9C0040FF</color>
+    <color name="colorCardDark">#8D1127BA</color>
+    <color name="colorAccent">#225CCF</color>
+    <color name="colorHint">#686767</color>
 </resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- EditText styles -->
+    <style name="EditText.Main" parent="Widget.AppCompat.EditText">
+        <item name="android:minHeight">@dimen/min_height</item>
+        <item name="android:textSize">@dimen/editText_text_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="EditText.Main.Light" parent="EditText.Main">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="EditText.Main.Dark" parent="EditText.Main">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/colorHint</item>
+    </style>
+
+    <!-- Button Submit style -->
+    <style name="ButtonSubmit.Main" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30dp</item>
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+
+    <!-- Button Add style -->
+    <style name="ButtonAdd.Main" parent="Widget.Design.FloatingActionButton">
+        <item name="android:background">?attr/colorPrimaryVariant</item>
+        <item name="android:src">@drawable/ic_add</item>
+    </style>
+
+    <!-- Word TextView Style -->
+    <style name="WordTextView.Main" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/wordTextSize</item>
+        <item name="android:textAlignment">center</item>
+
+        <item name="android:padding">6dp</item>
+        <item name="android:background">?attr/colorPrimaryContainer</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+    </style>
+
+    <!-- Word TextView Style -->
+    <style name="EmptyListTextView.Main" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/emptyListTextSize</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+</resources>

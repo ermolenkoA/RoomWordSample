@@ -1,6 +1,7 @@
 package com.example.roomwordsample.ui.adapters
 
 import android.view.LayoutInflater
+import android.view.ScrollCaptureCallback
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.constraintlayout.widget.ConstraintLayout

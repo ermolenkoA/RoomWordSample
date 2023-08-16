@@ -1,7 +1,28 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.RoomWordSample" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Base.Theme.RoomWordSample" parent="Theme.AppCompat.DayNight">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryContainer">@color/colorCardDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Text color -->
+        <item name="android:textColor">@color/black</item>
+        <!-- Background color -->
+        <item name="colorOnBackground">@color/white</item>
+        <item name="android:windowBackground">@color/black</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <!-- Action bar text color -->
+        <item name="titleTextColor">@color/white</item>
+
+        <!-- EditText Style -->
+        <item name="editTextStyle">@style/EditText.Main.Dark</item>
+        <!-- Button Style -->
+        <item name="buttonStyle">@style/ButtonSubmit.Main</item>
+        <!-- Floating Action Button Style -->
+        <item name="floatingActionButtonStyle">@style/ButtonAdd.Main</item>
     </style>
+
 </resources>

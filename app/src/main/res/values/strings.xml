@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name" translatable="false">RoomWordSample</string>
     <string name="add_word">Add word</string>
-    <string name="hint_word">Word...</string>
+    <string name="hint_word">Enter your word...</string>
+    <string name="list_is_empty">Word list is empty.</string>
     <string name="button_save">Save</string>
     <string name="empty_not_saved">Word not saved because it is empty.</string>
     <string name="word_is_deleted">Word was successfully deleted!</string>

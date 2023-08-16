@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="big_padding">16dp</dimen>
-    <dimen name="min_height">48dp</dimen>
+    <dimen name="default_margin">10dp</dimen>
+    <dimen name="add_button_margin">20dp</dimen>
+    <dimen name="min_height">60dp</dimen>
+    <dimen name="editText_text_size">20sp</dimen>
+    <dimen name="wordTextSize">22sp</dimen>
+    <dimen name="emptyListTextSize">30sp</dimen>
 </resources>

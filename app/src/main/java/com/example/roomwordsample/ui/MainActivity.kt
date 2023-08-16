@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
@@ -65,7 +66,6 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
-                Snackbar.make(binding.root, R.string.word_is_deleted, Snackbar.LENGTH_LONG).show()
                 wordViewModel.delete((viewHolder as GetWordFromItem).getWord())
             }
 
@@ -81,7 +81,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         wordViewModel.allWords.observe(this) { words ->
-            words.let { adapter.submitList(it) }
+            words?.let {list ->
+                adapter.submitList(list)
+                if(list.isEmpty()){
+                    binding.emptyListTextView.visibility = View.VISIBLE
+                } else {
+                    binding.emptyListTextView.visibility = View.GONE
+                }
+
+            }
         }
     }
 

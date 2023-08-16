@@ -1,17 +1,29 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.RoomWordSample" parent="Theme.MaterialComponents.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="Base.Theme.RoomWordSample" parent="Theme.AppCompat.Light">
+        <!-- Primary brand color -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryLight</item>
+        <item name="colorPrimaryContainer">@color/colorCardLight</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
+        <!-- Text color -->
+        <item name="android:textColor">@color/black</item>
+        <!-- Background color -->
+        <item name="colorOnBackground">@color/black</item>
+        <item name="android:windowBackground">@color/white</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <!-- Action bar text color -->
+        <item name="titleTextColor">@color/white</item>
 
-    <style name="word_title">
-        <item name="android:layout_marginBottom">8dp</item>
-        <item name="android:paddingLeft">8dp</item>
-        <item name="android:background">@android:color/holo_orange_light</item>
-        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+        <!-- EditText Style -->
+        <item name="editTextStyle">@style/EditText.Main.Light</item>
+        <!-- Button Style -->
+        <item name="buttonStyle">@style/ButtonSubmit.Main</item>
+        <!-- Floating Action Button Style -->
+        <item name="floatingActionButtonStyle">@style/ButtonAdd.Main</item>
     </style>
 
     <style name="Theme.RoomWordSample" parent="Base.Theme.RoomWordSample" />
