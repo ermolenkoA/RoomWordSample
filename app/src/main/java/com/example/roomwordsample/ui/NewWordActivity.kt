@@ -1,11 +1,10 @@
-package com.example.roomwordsample.ui.wordsActivity
+package com.example.roomwordsample.ui
 
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
-import com.example.roomwordsample.R
 import com.example.roomwordsample.databinding.ActivityNewWordBinding
 
 class NewWordActivity : AppCompatActivity() {

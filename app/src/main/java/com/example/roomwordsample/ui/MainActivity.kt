@@ -9,18 +9,17 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.roomwordsample.R
-import com.example.roomwordsample.WordsApplication
 import com.example.roomwordsample.data.Word
 import com.example.roomwordsample.databinding.ActivityMainBinding
+import com.example.roomwordsample.domain.WordViewModel
 import com.example.roomwordsample.ui.adapters.WordListAdapter
-import com.example.roomwordsample.ui.wordsActivity.NewWordActivity
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private val wordViewModel: WordViewModel by viewModels {
-        WordViewModelFactory((application as WordsApplication).repository)
-    }
+    private val wordViewModel: WordViewModel by viewModels()
 
     private val resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
         if (result.resultCode == Activity.RESULT_OK) {
