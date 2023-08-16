@@ -4,4 +4,5 @@
     <string name="hint_word">Слово...</string>
     <string name="button_save">Сохранить</string>
     <string name="empty_not_saved">Слово не было сохранено, т.к. оно пустое</string>
+    <string name="word_is_deleted">Слово успешно удалено!</string>
 </resources>

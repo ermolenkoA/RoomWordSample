@@ -18,4 +18,8 @@ class WordViewModel @Inject constructor(private val repository: WordRepository) 
     fun insert(word: Word) = viewModelScope.launch {
         repository.insert(word)
     }
+
+    fun delete(word: String) = viewModelScope.launch {
+        repository.delete(word)
+    }
 }

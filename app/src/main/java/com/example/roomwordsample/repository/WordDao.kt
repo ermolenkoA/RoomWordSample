@@ -17,4 +17,7 @@ interface WordDao {
 
     @Query("DELETE FROM $wordTableKey")
     suspend fun deleteAll()
+
+    @Query("DELETE FROM $wordTableKey WHERE $wordKey = :word")
+    suspend fun delete(word: String)
 }
